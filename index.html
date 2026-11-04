@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Om ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Password Screen -->
+    <div id="passwordScreen">
+        <h1>🎁 A Surprise For You</h1>
+        <p>Someone special has a surprise for you ❤️</p>
+
+        <input type="password" id="password" placeholder="Enter Secret Password">
+        <button onclick="checkPassword()">Unlock ❤️</button>
+
+        <p id="error"></p>
+    </div>
+
+    <!-- Birthday Screen -->
+    <div id="birthdayScreen" style="display:none;">
+
+        <h1>Happy Birthday Om! 🎂</h1>
+        <p>Today is all about YOU! ❤️</p>
+
+        <button id="openGiftButton" onclick="showGiftBox()">
+            Open Your Gift 🎁
+        </button>
+
+        <!-- Gift Box -->
+        <div id="giftBox" onclick="openGift()" style="display:none;">
+            <div class="gift">🎁</div>
+            <p>Tap to open your gift! 💗</p>
+        </div>
+
+        <!-- Birthday Surprise -->
+        <div id="surprise" style="display:none;">
+
+            <h1>🎉 Happy Birthday My Special Person 🎉</h1>
+            <p>Wishing you endless happiness and love! ❤️</p>
+
+            <h2>✨ Your Beautiful Memories ✨</h2>
+
+            <!-- Om's Photos -->
+            <div class="gallery">
+                <img src="images/om1.jpeg" alt="Om Photo 1">
+                <img src="images/om2.jpeg" alt="Om Photo 2">
+                <img src="images/om3.jpeg" alt="Om Photo 3">
+                <img src="images/om4.jpeg" alt="Om Photo 4">
+                <img src="images/om5.jpeg" alt="Om Photo 5">
+                <img src="images/om6.jpeg" alt="Om Photo 6">
+            </div>
+
+            <!-- Special Message -->
+            <div class="love-message">
+                <h2>💌 A Special Message For You</h2>
+
+                <p>
+                    You are very special to me, Om.
+                    I wish your life is always filled
+                    with happiness, smiles and success.
+                    Keep smiling and stay happy always.
+                    Happy Birthday! ❤️
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
